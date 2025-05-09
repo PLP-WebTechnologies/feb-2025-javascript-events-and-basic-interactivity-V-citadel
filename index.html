@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" aria-label="Navigate to Home section">Home</a></li>
+            <li><a href="#gallery" aria-label="Navigate to Gallery section">Gallery</a></li>
+            <li><a href="#contact" aria-label="Navigate to Contact section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Welcome to Wildlife Explorer</h1>
+        <p>Discover the beauty of nature and its fascinating creatures.</p>
+    </header>
+
+    <!-- Interactive Button -->
+    <section>
+        <button id="magicButton" aria-label="Click to trigger interaction">Click Me to Change!</button>
+    </section>
+
+    <!-- Wildlife Gallery -->
+     
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/1.jpg" alt="Wild Animal">
+            <img src="images/2.jpg" alt="Wild Bird">
+            <img src="images/3.jpg" alt="Wild Landscape">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <button type="submit">Submit</button>
+            <p id="feedback" role="alert"></p>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
